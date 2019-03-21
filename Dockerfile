@@ -1,0 +1,5 @@
+FROM mysql:5.6
+
+ENV MYSQL_DATABASE estoque_laravel
+
+ENV MYSQL_ROOT_PASSWORD root
