@@ -27,3 +27,7 @@ Route::get('/produtos/editar/{id}', 'ProdutoController@editar')
     ->where('id', '[0-9]+');
 
 Route::post('/produtos/salvar', 'ProdutoController@salvar');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
